@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day, My Love!</title>
+    <style>
+        body {
+            background-color: #ffe6f2;
+            font-family: 'Arial', sans-serif;
+            color: #d5006d;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-top: 50px;
+            color: #d5006d;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        .heart {
+            font-size: 50px;
+            color: red;
+            animation: pulse 1.5s infinite;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            flex-wrap: wrap;
+            gap: 20px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .container img {
+            max-width: 90%;
+            height: auto;
+            max-height: 300px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: zoomIn 1.5s ease-out;
+        }
+
+        .message {
+            font-size: 20px;
+            margin-top: 30px;
+            color: #d5006d;
+            padding: 0 20px;
+        }
+
+        .realistic-heart {
+            width: 80px;
+            height: 80px;
+            background-color: #e5004c;
+            position: relative;
+            display: inline-block;
+            transform: rotate(45deg);
+            margin: 20px auto;
+            animation: heart-beat 1.5s infinite, rotateHeart 3s linear infinite;
+        }
+
+        .realistic-heart::before, .realistic-heart::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 120px;
+            background-color: #e5004c;
+            border-radius: 50%;
+            top: -60px;
+        }
+
+        .realistic-heart::before {
+            left: -60px;
+        }
+
+        .realistic-heart::after {
+            right: -60px;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes heart-beat {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes rotateHeart {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Valentine's Day, My Love! <span class="heart">❤️</span></h1>
+    <div class="container">
+        <img src="C:\Users\Asus\Downloads\WhatsApp Image 2025-02-13 at 11.36.12 PM.jpeg" alt="Special moment 1" />
+        <img src="C:\Users\Asus\Downloads\WhatsApp Image 2025-02-13 at 11.36.11 PM (1).jpeg" alt="Special moment 2" />
+        <img src="C:\Users\Asus\Downloads\WhatsApp Image 2025-02-13 at 11.36.11 PM.jpeg" alt="Special moment 3" />
+        <img src="C:\Users\Asus\Downloads\WhatsApp Image 2025-02-13 at 11.36.09 PM (1).jpeg" alt="Special moment 4" />
+    </div>
+    <div class="message">
+        <h2>For the one who makes my heart beat faster</h2>
+        <p>Every moment spent with you is a precious memory. I love you more than words can say, today and always. You're my Valentine, forever and always.</p>
+    </div>
+    
+    <div class="heart">
+        ❤️
+    </div>
+</body>
+</html>
